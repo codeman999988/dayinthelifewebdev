@@ -1,0 +1,27 @@
+
+
+.about__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+
+    
+}
+
+.about__section__person {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.cody {
+    width: 250px;
+    height: 250px;
+}
+
+.names {
+    margin: 2rem;
+}
+

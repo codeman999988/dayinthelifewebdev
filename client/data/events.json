@@ -1,0 +1,426 @@
+[
+    {
+        "Event": "1-1",
+        "Image": "https://media2.giphy.com/media/loP4CZ8mX1yhwztQWR/giphy.gif?cid=ecf05e476vomwlmf8kleg7ydoylatp26o78hpg76jgfmejv2&rid=giphy.gif",
+        "FlavorText": "Time to wake up! Your alarm clock roaring, letting you know that it’s time to rise and get ready for another day at Webdev Bootcamp.  Deep inside you, a small voice arises, urging you to press the snooze button.",
+        "Buttons": [
+            {
+                "Name": "Next",
+                "Path": "1-2",
+                "Damage": 0
+            }
+        ],
+        "Sound": "../data/images/"
+    },
+    {
+        "Event": "1-2",
+        "Image": "./",
+        "FlavorText": "C’mon, just another 9 minutes, you’ll feel better if you do it.  You know you want to.” the voice implores.  What will you do?",
+        "Buttons": [
+            {
+                "Name": "Press the snooze button",
+                "Path": "1-3a",
+                "Damage": 1
+            },
+            {
+                "Name": "Get up",
+                "Path": "1-3b",
+                "Damage": 0
+            }
+        ],
+        "Sound": "./"
+    },
+    {
+        "Event": "1-3a",
+        "Image": "./",
+        "FlavorText": "You give in to the voice.  “It’s only 9 minutes,” you think to yourself, and go right back to sleep.  After your snooze, you realize that you are behind schedule, and will be late to starting todays Cyberpunk morning challenge.  It’s going to be harder to pass the class if you keep making choices like this.",
+        "Buttons": [
+            {
+                "Name": "Move on to Morning Challenge",
+                "Path": "2-1"
+            }
+        ],
+        "Sound": "./"
+    },
+    {
+        "Event": "1-3b",
+        "Image": "./",
+        "FlavorText": "'No,' you tell yourself.  “I’m going to get up now!”  You’re still a little tired, but your inspired by your own eagerness to tackle today's challenges",
+        "Buttons": [
+            {
+                "Name": "Move on to Morning Challenge",
+                "Path": "2-1"
+            }
+        ],
+        "Sound": "./" 
+    },
+    {
+        "Event": "2-1",
+        "Image": "./",
+        "FlavorText": "Today’s Cyberpunk morning challenge is all about using a new, unfamiliar API to populate an example web page.  You read over the challenge in the class Smack channel.  “This stuff is simple, we went over how to make axios requests a few different times this week, I should be able to accomplish this morning challenge with time to spare!” you imagine. ",
+        "Buttons": [
+            {
+                "Name": "Begin Morning Challenge",
+                "Path": "2-2"
+            }
+        ],
+        "Sound": "./" 
+    },
+    {
+        "Event": "2-2",
+        "Image": "./",
+        "FlavorText": "You start writing some code.  You put together some basic boilerplate and are ready to start writing your code to access the information in the API.  You feel pretty confident making axios requests, and you also feel familiar with RESTful principles.  Moment of truth, what do you do?",
+        "Buttons": [
+            {
+                "Name": "Read the Documentation",
+                "Path": "2-3a"
+            }
+            {
+                "Name": "Skip reading the documentation and make the requests",
+                "Path": "2-3b"
+            }
+        ],
+        "Sound": "./"
+    },
+    {
+        "Event": "2-3a",
+        "Image": "./",
+        "FlavorText": "You can hear the voice of your instructor in your head, and the sounds of banging on the table, “READ THE DOCUMENTATION!”.  Upon reading the documentation, you notice that there is a unique header that you need to use for all of your requests, and you implement that requirement into your code!  “Whew, Instructor Bebe was right, I am happy I read the docs before trying to use this API,” you think, and you finish the Morning Challenge with time to spare.",
+        "Buttons": [
+            {
+                "Name": "NEXT",
+                "Path": "3-1"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "2-3b",
+        "Image": "./",
+        "FlavorText": "“READ THE DOCUMENTATION!” Instructor Bebe’s voice exclaims in your head.  “Nah, I don’t need it, I know how to code,” you confidently reply and begin to start writing your axios requests.",
+        "Buttons": [
+            {
+                "Name": "NEXT",
+                "Path": "2-4b"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "2-4b",
+        "Image": "./",
+        "FlavorText": "“Error!  Error!” your code screams back at you every time you attempt to run it.  You scour your code for mispellings and syntax errors, and find none.  “Everything is perfect?  What’s going wrong?”  Eventually, you resign yourself to read the documentation and you learn that there was a unique header requirement that you needed to incorporate in order to successfully make the requests.  You begin to implement it but- uhoh!  Class is about to start.  You don’t finish your morning challenge.",
+        "Buttons": [
+            {
+                "Name": "NEXT",
+                "Path": "3-1"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "3-1",
+        "Image": "./",
+        "FlavorText": "Class time!  Class begins with a lecture from Head Instructor Bernie who happens to be insanely fit and has a cool robotic arm.  After the lecture is over, Bernie informs the class that in place of a quiz that day, the class will play a game of Kaboot.",
+        "Buttons": [
+            {
+                "Name": "Log in and play Kaboot",
+                "Path": "3-2"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "3-2",
+        "Image": "./",
+        "FlavorText": "At first, Bernie has an issue getting Kaboot to load.  “Sanity check me instructors,” he says “Is this the right Kaboot url?”  After a few minutes of troubleshooting, they resolve the issue and you sign up for the Kaboot at the correct website.  Kaboot sign-in time, what nickname do you choose?",
+        "Buttons": [
+            {
+            /*    SOMEHOW WE WANT TO INCORPORATE A FORM HERE SO THE KABOOT PLAYER CAN ENTER THEIR NAME */
+               
+                "Name": "NEXT",
+                "Path": "3-3"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "3-3",
+        "Image": "./",
+        "FlavorText": "“You’re on the podium,” Kaboot informs you as you enter into the last question.  You’re currently in first place, but only by a few points, you know if you can answer the last question correctly you can get first place in Kaboot!  The last question in the kaboot is…",
+        "Buttons": [
+            {
+                "Name": "NEXT",
+                "Path": "3-4"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "3-4",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "wrong answer",
+                "Path": "3-5b"
+            }
+            {
+                "Name": "right answer",
+                "Path": "3-5a"
+            }
+            {
+                "Name": "wrong answer",
+                "Path": "3-5b"
+            }
+            {
+                "Name": "wrong answer",
+                "Path": "3-5b"
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    }
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    },    
+    {
+        "Event": "",
+        "Image": "./",
+        "FlavorText": "",
+        "Buttons": [
+            {
+                "Name": "",
+                "Path": ""
+            }
+        ],
+        "Sound": ""
+    }
+
+
+]
+

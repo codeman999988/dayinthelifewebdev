@@ -1,0 +1,13 @@
+@import '../../partials/fonts.scss';
+
+.header{ 
+    background-color: yellow;
+    color:blue ;
+    width: 100%;
+    height: 4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Prototype";
+}

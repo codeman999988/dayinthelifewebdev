@@ -1,0 +1,48 @@
+@import '../../partials/fonts.scss';
+
+.home-page__image {
+
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    // margin-top: 2rem;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    background-color: purple;
+    // justify-content: center;
+    // justify-content: flex-start;
+}
+
+.event__flavortext {
+    margin: 0 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: yellow;
+}
+
+.home-page__title{
+    font-family: "Prototype";
+    font-size: 30px;
+}
+
+.home-page__start-btn {
+    font-size: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: .45rem;
+    color: yellow;
+    border: 2px solid yellow;
+    background-color: skyblue;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+@import '../../partials/fonts.scss';
+
+* {
+    font-family: "Prototype";
+}
+body {
+    background-color: purple;
+}
+
+.event__image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.event__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+    // justify-content: center;
+    // justify-content: flex-start;
+}
+
+.event__flavortext {
+    margin: 0 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: yellow;
+}
+
