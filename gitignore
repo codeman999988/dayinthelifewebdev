@@ -4,7 +4,8 @@
 */node_modules
 /.pnp
 .pnp.js
-/client/node_modules/*git st
+/client/node_modules/*
+git st
 /server/node_modules
 /node_modules
 
