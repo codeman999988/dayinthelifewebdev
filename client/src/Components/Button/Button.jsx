@@ -18,8 +18,8 @@ class Button extends Component {
             path={this.props.path}
             className="event__button"
             onClick={(e)=> {
-                console.log(this.props)
-                this.props.clickHandler(e)
+                setTimeout(()=>{
+                this.props.clickHandler(e)}, 200)
             }}
             >
                 {this.props.name}
