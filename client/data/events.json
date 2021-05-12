@@ -10,7 +10,7 @@
                 "Damage": 0
             }
         ],
-        "Sound": "../data/images/"
+        "Sound": "client/data/alarm.wav"
     },
     {
         "Event": "1-2",

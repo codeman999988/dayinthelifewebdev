@@ -75,6 +75,8 @@ class GamePage extends Component {
                 Events: response.data,
 
                 Image: response.data.find( evt => evt.Event === this.state.EventPage).Image,
+
+                Sound: response.data.find( evt => evt.Event === this.state.EventPage).Sound
                 }
                 )
             })
@@ -90,6 +92,8 @@ class GamePage extends Component {
                 FlavorText: this.state.Events.find( evt => evt.Event === this.state.EventPage).FlavorText,
                 
                 Image: this.state.Events.find( evt => evt.Event === this.state.EventPage).Image,
+
+                Sound: this.state.Events.find( evt => evt.Event === this.state.EventPage).Sound
 
                 // hp: this.state.hp
                 
@@ -129,6 +133,10 @@ console.log(this.state.Events?.find( evt => evt.Event === this.state.EventPage).
             />
             )})}
         </div>
+        <audio controls autoplay>
+        <source src="/data/alarm.wav" type="audio/wav" />
+        Browser does not support audio
+        </audio>
                 {/* <Buttons 
                 EventPage={this.state.EventPage}
                 ButtonsArray={this.state.ButtonsArray}
