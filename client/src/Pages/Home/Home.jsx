@@ -8,15 +8,6 @@ import './Home.scss';
 class HomePage extends Component {
 
 
-
-    // componentDidMount () {
-
-    // }
-
-    // componentDidUpdate () {
-        
-    // }
-
     render() {
         return (
             <section className="home-page">

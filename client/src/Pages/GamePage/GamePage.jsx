@@ -3,19 +3,7 @@ import axios from 'axios';
 import Button from '../../Components/Button/Button'
 import './GamePage.scss';
 import '../../Components/Button/Button.scss';
-// import ThreeFour from '../../assets/images/ThreeFour.jpeg';
-// import OneOne from '../../assets/images/OneOne.gif';
-// import OneTwoA from '../../assets/images/OneTwoA.jpg';
-// import OneTwo from '../../assets/images/OneTwo.jpg';
-// import TwoOne from '../../assets/images/TwoOne.jpeg';
-// import TwoThreeB from '../../assets/images/TwoThreeB.jpeg';
-// import TwoTwo from '../../assets/images/TwoTwo.jpeg';
-// import TwoFourB from '../../assets/images/TwoFourB.jpeg';
-// import OneThreeB from '../../assets/images/OneThreeB.jpeg';
-// import ThreeOne from '../../assets/images/ThreeOne.jpeg';
-// import ThreeThree from '../../assets/images/ThreeThree.jpeg';
-// import ThreeTwo from '../../assets/images/ThreeTwo.jpeg';
-// import OneTwoA from '../../assets/images/OneTwoA.jpg';
+import ReactAudioPlayer from 'react-audio-player';
 import HealthBar from '../../Components/Healthbar/Healthbar';
 import path from 'path';
 
@@ -49,23 +37,16 @@ class GamePage extends Component {
         
     }
 
-    // takeDamage(e) {
-    //     if(e === true ){
-    //         return this.state.hp - 1
-    //     }else if {
-            
-    //     }
 
-    // }
 
     componentDidMount () {
         axios
         .get("http://localhost:8080/")
         .then(response =>{
-            // console.log(TwoTwo);
+
             this.setState(
                 {
-                // GameProgress: [1],
+   
                 EventPage: "1-1",
                 
                 ButtonsArray: response.data.find( evt => evt.Event === this.state.EventPage).Buttons,
@@ -95,21 +76,17 @@ class GamePage extends Component {
 
                 Sound: this.state.Events.find( evt => evt.Event === this.state.EventPage).Sound
 
-                // hp: this.state.hp
+
                 
             })
             
-    //         this.setState({
-    //             // ButtonsArray: response.data.find( evt => evt.Event == this.state.EventPage).Buttons,
-    //             // FlavorText: response.data.find( evt => evt.Event == this.state.EventPage).FlavorText
-    //         })
+
             
         }
     }
     render() {
 console.log(this.state.Events?.find( evt => evt.Event === this.state.EventPage).Image)
-// console.log(this.state.Image);
-// console.log(require(`../../assets/images${this.state.Image}`))
+
         return (
             <div>
                 <div className="event__container">
@@ -133,16 +110,11 @@ console.log(this.state.Events?.find( evt => evt.Event === this.state.EventPage).
             />
             )})}
         </div>
-        <audio controls autoplay>
-        <source src="/data/alarm.wav" type="audio/wav" />
-        Browser does not support audio
-        </audio>
-                {/* <Buttons 
-                EventPage={this.state.EventPage}
-                ButtonsArray={this.state.ButtonsArray}
-                clickHandler={(e) => {
-                    this.clickHandler(e)
-                }} */}
+        <audio controls>
+  <source src="/Users/codycrenshaw/Desktop/dayinthelifewebdev/client/data/alarm2.mp3" type="audio/mp3" />
+  </audio>
+
+
                 </div>
                 <HealthBar hp={this.state.hp} />
             </div>
